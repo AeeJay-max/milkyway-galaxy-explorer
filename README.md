@@ -1,73 +1,111 @@
-# React + TypeScript + Vite
+# 🌌 Milky Way Galaxy Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive **3D Milky Way Solar System experience** built using **React, TypeScript, Vite, and React Three Fiber**.
+The application simulates planetary motion with cinematic camera fly-throughs, realistic textures, lighting effects, and educational planetary data.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Features
 
-## React Compiler
+* 🌍 Realistic textured planets
+* ☀️ Dynamic solar lighting system
+* 🛰️ Orbital motion simulation
+* 🎥 Cinematic camera navigation between planets
+* ✨ Starfield background environment
+* 📊 Planetary configuration via structured data store
+* 🔊 Ambient space audio environment
+* 📱 Responsive UI overlay navigation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+* React
+* TypeScript
+* Vite
+* React Three Fiber
+* Three.js
+* Tailwind CSS
+* Zustand (state management)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 📂 Project Structure
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+src/
+components/
+3d/
+CameraController.tsx
+Planet.tsx
+SolarSystem.tsx
+Scene.tsx
+Stars.tsx
+
+ui/
+Navigation.tsx
+Overlay.tsx
+
+config/
+planets.ts
+
+store/
+useStore.ts
+
+---
+
+## ⚙️ Installation & Setup
+
+Clone the repository:
+
+```bash
+git clone https://github.com/AeeJay-max/milkyway-galaxy-explorer.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Navigate into the project folder:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+cd milkyway-galaxy-explorer
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+---
+
+## 🎯 Project Goals
+
+This project demonstrates:
+
+* 3D scene composition using React Three Fiber
+* Camera animation systems
+* Orbital mechanics simulation
+* Component-based architecture for interactive graphics apps
+* Real-time rendering performance optimization techniques
+
+---
+
+## 📌 Future Improvements
+
+Planned enhancements include:
+
+* Planet information panels with scientific data
+* Asteroid belt simulation
+* Saturn ring particle refinement
+* Orbit path visualization
+* Zoom-to-surface planet exploration mode
+* Galaxy-level navigation beyond the Solar System
+
+---
+
+## 👨‍💻 Author
+
+Developed by **Tatenda A. J. Makura**
